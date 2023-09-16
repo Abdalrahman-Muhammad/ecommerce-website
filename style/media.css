@@ -1,0 +1,11 @@
+/* @media (max-width: 768px) {
+  .list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: ;
+    flex-wrap: wrap;
+    width: 430px;
+    height: 24px;
+    flex-shrink: 0;
+  }
+} */

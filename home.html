@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/online-marketing.png"
+      type="image/x-icon"
+    />
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <i
+          class="fa-solid fa-sack-dollar fa-bounce fa-lg"
+          style="color: #b88e2f"
+        ></i>
+        HOP
+      </div>
+      <div class="list">
+        <ul>
+          <li><a href="./home.html" class="active">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="cart">
+        <i
+          class="fa-solid fa-cart-shopping"
+          style="cursor: pointer"
+          onclick="openCart()"
+        ></i>
+        <span id="cartCount">0</span>
+        <div id="allScreen">
+          <div id="cart-div">
+            <i class="fa-solid fa-circle-xmark" style="color: #b88e2f"></i>
+            <div id="cart-items-container"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div>
+        <div class="first">New Arrival</div>
+        <div class="second">Discover Our New Collection</div>
+        <div class="third">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis.
+        </div>
+        <div class="fourth">
+          <a href="#productsSection" style="text-decoration: none">Buy Now</a>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="top" onclick="goTop()">
+        <i class="fa-solid fa-circle-chevron-up" style="color: #b88e2f"></i>
+      </div>
+      <div class="sliderContainer">
+        <div class="head">Browse The Range</div>
+        <div class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+        <div class="slider">
+          <div class="box active">
+            <img src="./img/banner_img_01.jpg" alt="" />
+          </div>
+          <div class="box"><img src="./img/banner_img_02.jpg" alt="" /></div>
+          <div class="box"><img src="./img/banner_img_03.jpg" alt="" /></div>
+          <div class="next" onclick="handleSlide('next','human')">
+            <i
+              class="fa-solid fa-circle-chevron-right"
+              style="color: #b88e2f"
+            ></i>
+          </div>
+          <div class="pre" onclick="handleSlide('back','human')">
+            <i
+              class="fa-solid fa-circle-chevron-left"
+              style="color: #b88e2f"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+
+      <div id="productsSection" class="productSection">
+        <div class="productHeader">Our Products</div>
+        <div class="category-list"></div>
+        <div class="products"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="ftr">
+        <div class="footerList">
+          <ul>
+            <li>
+              <div class="logo foot">
+                <i
+                  class="fa-solid fa-sack-dollar fa-lg"
+                  style="color: #b88e2f"
+                ></i
+                >HOP
+              </div>
+            </li>
+            <li>
+              <div class="location">
+                400 University Drive Suite 200 Coral Gables,<br />
+                FL 33134 USA
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footerList">
+          <ul>
+            <li class="location">links</li>
+            <li><a style="cursor: pointer" onclick="goTop()">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footerList">
+          <ul>
+            <li class="location">Help</li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </div>
+        <div class="footerList">
+          <ul>
+            <li class="location">Newsletter</li>
+            <li>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="mail"
+              />
+              <input class="subscribe" type="button" value="SUBSCRIBE" />
+            </li>
+            <li>
+              <a
+                ><i
+                  class="fa-brands fa-square-facebook"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-linkedin"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-twitter"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-tiktok"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- <script type="module" src="./js/displayProducts.js"></script> -->
+    <script src="./js/main.js"></script>
+    <script src="./js/home.js"></script>
+    <script
+      src="https://kit.fontawesome.com/4a4262c802.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

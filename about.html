@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/online-marketing.png"
+      type="image/x-icon"
+    />
+
+    <title>About us</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="logo">
+        <i
+          class="fa-solid fa-sack-dollar fa-bounce fa-lg"
+          style="color: #b88e2f"
+        ></i
+        >HOP
+      </div>
+      <div class="list">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html" class="active">About</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="cart">
+        <i
+          class="fa-solid fa-cart-shopping"
+          style="cursor: pointer"
+          onclick="openCart()"
+        ></i>
+        <span id="cartCount">0</span>
+        <div id="allScreen">
+          <div id="cart-div">
+            <i class="fa-solid fa-circle-xmark" style="color: #b88e2f"></i>
+            <div id="cart-items-container"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div>
+        <div class="first">what do you know</div>
+        <div class="second">ABOUT US</div>
+        <div class="third">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Obcaecati eius, minima vero non illo
+          asperiores, dolor culpa cupiditate neque dolorum fuga molestiae quos,
+          corrupti a necessitatibus illum quibusdam optio facilis!
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="top" onclick="goTop()">
+        <i class="fa-solid fa-circle-chevron-up" style="color: #b88e2f"></i>
+      </div>
+      <div>
+        <h2>The Founders</h2>
+        <div class="displayFlex">
+          <div class="flexContainer">
+            <img src="./img/36183.png" /> <span>Abdalrahman Muhammad</span>
+          </div>
+          <div class="line"></div>
+          <div class="flexContainer">
+            <img src="./img/36183.png" /> <span>Abdalrahman Muhammad</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonals">
+        <h2>Testimonials</h2>
+        <div class="container">
+          <div class="img">
+            <img src="./img/uncsxscassplash_6W4F62sN_yI.svg" alt="" />
+          </div>
+          <div>
+            <div class="txt">
+              <div><i class="fa-solid fa-quote-right"></i></div>
+              Once we ordered some accessories items and we got the products
+              delivered in our doorstep, the customer support was super helpful
+              and they answered all my queries.
+              <br /><br />
+              <div>Stacy</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="img">
+            <img src="./img/unsplash_6W4F62sN_yIpng.png" alt="" />
+          </div>
+          <div>
+            <div class="txt">
+              <div><i class="fa-solid fa-quote-right"></i></div>
+              I ordered 5 shirts from them and received them in no time. The
+              customer support was awesome!
+              <br /><br />
+              <div>Tiffany</div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="img">
+            <img src="./img/unsplash_6W4F62sN_yIpng2.png" alt="" />
+          </div>
+          <div>
+            <div class="txt">
+              <div><i class="fa-solid fa-quote-right"></i></div>
+              I got a wrong shirt so I contacted them and they happily offered
+              me a refund. I will surely shop from them again.
+              <br /><br />
+              <div>James</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="ftr">
+        <div class="footerList">
+          <ul>
+            <li>
+              <div class="logo foot">
+                <i
+                  class="fa-solid fa-sack-dollar fa-lg"
+                  style="color: #b88e2f"
+                ></i>
+                HOP
+              </div>
+            </li>
+            <li>
+              <div class="location">
+                400 University Drive Suite 200 Coral Gables,<br />
+                FL 33134 USA
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footerList">
+          <ul>
+            <li class="location">links</li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a style="cursor: pointer" onclick="goTop()">About</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footerList">
+          <ul>
+            <li class="location">Help</li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </div>
+        <div class="footerList">
+          <ul>
+            <li class="location">Newsletter</li>
+            <li>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="mail"
+              />
+              <input class="subscribe" type="button" value="SUBSCRIBE" />
+            </li>
+            <li>
+              <a
+                ><i
+                  class="fa-brands fa-square-facebook"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-linkedin"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-twitter"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-tiktok"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/4a4262c802.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/about.js"></script>
+  </body>
+</html>

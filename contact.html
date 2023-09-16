@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="./img/online-marketing.png"
+      type="image/x-icon"
+    />
+
+    <title>Contact us</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <i
+          class="fa-solid fa-sack-dollar fa-bounce fa-lg"
+          style="color: #b88e2f"
+        ></i
+        >HOP
+      </div>
+      <div class="list">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html" class="active">Contact Us</a></li>
+        </ul>
+      </div>
+      <div id="cart">
+        <i
+          class="fa-solid fa-cart-shopping"
+          style="cursor: pointer"
+          onclick="openCart()"
+        ></i>
+        <span id="cartCount">0</span>
+        <div id="allScreen">
+          <div id="cart-div">
+            <i class="fa-solid fa-circle-xmark" style="color: #b88e2f"></i>
+            <div id="cart-items-container"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="top" onclick="goTop()">
+        <i class="fa-solid fa-circle-chevron-up" style="color: #b88e2f"></i>
+      </div>
+      <div class="contactHeader">Contact us</div>
+      <div class="getInTouch">
+        <h2>Get In Touch With Us</h2>
+        <p>
+          For More Information About Our Product & Services. Please Feel Free To
+          Drop Us An Email. Our Staff Always Be There To Help You Out. Do Not
+          Hesitate!
+        </p>
+      </div>
+      <div class="formContainer">
+        <div class="Information">
+          <div class="component">
+            <div class="icon"><img src="./img/loc.svg" alt="" /></div>
+            <div class="info">
+              <h3>Address</h3>
+              <p>236 5th SE Avenue, New York NY10000, United States</p>
+            </div>
+          </div>
+          <div class="component">
+            <div class="icon"><img src="./img/bxs_phone.svg" alt="" /></div>
+            <div class="info">
+              <h3>Phone</h3>
+              <p>Mobile: +(84) 546-6789 Hotline: +(84) 456-6789</p>
+            </div>
+          </div>
+          <div class="component">
+            <div class="icon"><img src="./img/bi_clock-fill.svg" alt="" /></div>
+            <div class="info">
+              <h3>Working Time</h3>
+              <p>Monday-Friday: 9:00 - 22:00 Saturday-Sunday: 9:00 - 21:00</p>
+            </div>
+          </div>
+        </div>
+        <div class="form">
+          <form action="" onsubmit="handleSubmit(event)">
+            <label for="txtInput">Your name</label>
+            <input
+              id="txtInput"
+              name="uname"
+              type="text"
+              placeholder="Please Enter Your Name"
+            />
+            <label for="mail">Email address</label>
+            <input
+              type="email"
+              name="umail"
+              placeholder="Abc@def.com"
+              id="mail"
+            />
+            <label for="subject">Subject</label>
+            <input
+              name="usubject"
+              id="subject"
+              type="text"
+              placeholder="This is an optional"
+            />
+            <label for="review">Message</label>
+            <textarea
+              id="review"
+              name="review"
+              rows="5"
+              cols="30"
+              placeholder="Hi! i’d like to ask about"
+            ></textarea>
+            <label class="validation"></label>
+            <input type="submit" name="" id="submitBtn" value="Submit" />
+          </form>
+        </div>
+      </div>
+      <div class="outer">
+        <div class="inner">
+          <div>
+            <img src="./img/trophy 1.svg" alt="" />
+            <div>
+              <h3>High Quality</h3>
+              <p>crafted from top materials</p>
+            </div>
+          </div>
+          <div>
+            <img src="./img/guarantee.svg" alt="" />
+            <div>
+              <h3>Warranty Protection</h3>
+              <p>Over 2 years</p>
+            </div>
+          </div>
+          <div>
+            <img src="./img/shipping.svg" alt="" />
+            <div>
+              <h3>Free Shipping</h3>
+              <p>Order over 150 $</p>
+            </div>
+          </div>
+          <div>
+            <img src="./img/customer-support.svg" alt="" />
+            <div>
+              <h3>24 / 7 Support</h3>
+              <p>Dedicated support</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="contactFooter">
+      <div class="ftr">
+        <div class="footerList">
+          <ul>
+            <li>
+              <div class="logo foot">
+                <i
+                  class="fa-solid fa-sack-dollar fa-lg"
+                  style="color: #b88e2f"
+                ></i>
+                HOP
+              </div>
+            </li>
+            <li>
+              <div class="location">
+                400 University Drive Suite 200 Coral Gables,<br />
+                FL 33134 USA
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footerList">
+          <ul>
+            <li class="location">links</li>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a style="cursor: pointer" onclick="goTop()">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footerList">
+          <ul>
+            <li class="location">Help</li>
+            <li><a href="#">Payment Options</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+          </ul>
+        </div>
+        <div class="footerList">
+          <ul>
+            <li class="location">Newsletter</li>
+            <li>
+              <input
+                type="email"
+                placeholder="Enter Your Email Address"
+                class="mail"
+              />
+              <input class="subscribe" type="button" value="SUBSCRIBE" />
+            </li>
+            <li>
+              <a
+                ><i
+                  class="fa-brands fa-square-facebook"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-linkedin"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-twitter"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+              <a
+                ><i
+                  class="fa-brands fa-tiktok"
+                  style="font-size: 30px; cursor: pointer"
+                ></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/4a4262c802.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
